@@ -1,0 +1,30 @@
+- name: ping the server
+  Host: web
+  become: yes #become root user
+
+  tasks:
+  - name: installing nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
+  - name: start nginx
+    ansible.builtin.service:
+      name: nginx
+      state: start
+      enable: yes
+
+
+
+  #   - name: install and run nginx
+  # hosts: web
+  # become: yes # equal to -b in adhoc commands, getting root access
+  # tasks:
+  # - name: install nginx
+  #   ansible.builtin.dnf:
+  #     name: nginx
+  #     state: latest
+  # - name: start nginx
+  #   ansible.builtin.service:
+  #     name: nginx
+  #     state: started
+  #     enabled: yes
