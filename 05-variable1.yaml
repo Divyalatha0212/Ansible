@@ -2,7 +2,7 @@
   hosts: localhost
   vars: #here we are declaring the variables in PLAY
    Course: "DevOps"
-   Purspose: "Interview"
+   Purpose: "Interview"
   tasks: 
   - name: Print the information
     ansible.builtin.debug:
