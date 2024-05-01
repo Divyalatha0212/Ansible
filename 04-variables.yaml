@@ -1,0 +1,7 @@
+- name: variable
+  hosts: localhost
+  tasks:
+   -name: print info
+    ansible.builtin.debug:
+     msg: "I'm practicing DevOps and Preparing for Interview"
+     
