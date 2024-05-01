@@ -1,0 +1,9 @@
+- name: variables from play
+  hosts: localhost
+  vars: #here we are declaring the variables in PLAY
+   Course: "DevOps"
+   Purspose: "Interview"
+  tasks: 
+  - name: Print the information
+    ansible.builtin.debug:
+     msg: " I am practcing {{Couse}} for my {{Purpose}} "
