@@ -6,4 +6,4 @@
   tasks: 
   - name: Print the information
     ansible.builtin.debug:
-     msg: " I am practcing {{Couse}} for my {{Purpose}} "
+     msg: " I am practcing {{Course}} for my {{Purpose}} "
