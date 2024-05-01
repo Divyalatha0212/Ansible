@@ -1,0 +1,26 @@
+- name: PLAY-1
+  hosts: localhost
+  tasks:
+   - name: PLAY-1 and TASK-1
+      ansible.builtin.debug:
+       msg: "Hello I am practicing Devop for my career growth and writing PLAY-1 and TASK-1"
+- name: PLAY-2
+  hosts: localhost
+  tasks:
+   - name: PLAY-2 and TASK-1
+     ansible.builtin.debug:
+      msg: "Hi Im writing ansible playbook in PLAY-2 & TASK-1"
+
+#       - name: PLAY-1
+#   hosts: localhost
+#   tasks:
+#   - name: PLAY-1 and TASK-1
+#     ansible.builtin.debug:
+#       msg: "Hello I am from PLAY-1 and TASK-1"
+
+# - name: PLAY-2
+#   hosts: localhost
+#   tasks:
+#   - name: PLAY-2 and TASK-1
+#     ansible.builtin.debug:
+#       msg: "Hello I am from PLAY-2 and TASK-1"
