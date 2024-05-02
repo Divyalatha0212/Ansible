@@ -5,7 +5,7 @@
 [localhosts]
 localhost
 
-[local:vars]
+[localhost:vars]
 
-File= "Inventory"
-Where= "Ansible"
+File="Inventory"
+Where="Ansible"
