@@ -2,5 +2,7 @@
   hosts: localhost
   tasks:
    - name: print the information
+     vars:
+     Learn: "Inventory"
      ansible.builtin.debug:
       msg: "Hi I am executing {{Learn}} variables in {{Where}}"
