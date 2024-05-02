@@ -1,7 +1,7 @@
 - name: Variables from Task
   hosts: localhost
   vars:
-   Course: "Devops"
+   Course: "DevOps"
    Reason: "Interview"
   tasks:
    - name: print the information
