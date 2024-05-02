@@ -1,4 +1,4 @@
-172.31.31.198
+172.31.29.213 #ansible privae ip
 [web]
-172.31.31.198 #private ip of node
+172.31.31.198 #node private ip
 
