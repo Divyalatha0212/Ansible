@@ -1,9 +1,16 @@
 - name: variables from task
   hosts: localhost
+  vars:
+   Course: "Shellscript"
+   Purpose: "Interview"
+
   tasks:
-   - name: print the information
+   - name: print override information
      vars:
       Course: "Course"
       Purpose: "Interview"
-     ansible;builtin.debug:
+     ansible.builtin.debug:
       msg: "Hi I ' am practicing {{Course}} for my {{Purpose}}."
+
+   - name: print the information
+     ansible.builtin.debug:
