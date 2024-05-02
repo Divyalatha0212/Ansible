@@ -1,9 +1,9 @@
 - name: variables from task
-  hosts: local
+  hosts: localhost
   tasks:
    - name: print the information
      vars:
       Course: "Course"
       Purpose: "Interview"
      ansible;builtin.debug:
-      msg: "Hi I ' am practicing {{Course}} for my {{Purpose}}"
+      msg: "Hi I ' am practicing {{Course}} for my {{Purpose}}."
