@@ -1,11 +1,11 @@
 - name: Variables from files
   hosts: localhost
-  #vars_files:
-   #- vars.yaml
+  vars_files:
+   vars.yaml
   tasks:
     - name: print the information
-      vars_files:
-       vars.yaml
+      # vars_files:
+      #  vars.yaml   # In task level it wont work
       ansible.builtin.debug:
         msg: Im practicing {{Course}} for my {{Purpose}}.
 
