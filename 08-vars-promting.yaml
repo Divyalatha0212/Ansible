@@ -1,6 +1,6 @@
 - name: variables from promt
   hosts: localhost
-  vars_promt:
+  vars_prompt:
    - name: USERNAME
      promt: please enter the username
      private: false
