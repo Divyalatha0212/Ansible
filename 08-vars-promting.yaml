@@ -1,0 +1,4 @@
+- name: variables from promt
+  hosts: localhost
+  vars_promt:
+   -
