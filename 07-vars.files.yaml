@@ -1,8 +1,8 @@
 - name: Variables from files
-  hosts: loacalhost
-  var_file:
+  hosts: localhost
+  vars_file:
    - var.yaml
   tasks:
-   - name: print the inormation
+   - name: print the information
      ansible.builtin.debug:
       msg: "Im practicing {{Course}} for my {{Interview}}."
