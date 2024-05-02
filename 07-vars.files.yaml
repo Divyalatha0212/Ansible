@@ -5,4 +5,4 @@
   tasks:
    - name: print the information
      ansible.builtin.debug:
-      msg: "Im practicing {{Course}} for my {{Interview}}."
+      msg: "Im practicing {{Course}} for my {{Purpose}}."
