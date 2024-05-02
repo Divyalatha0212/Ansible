@@ -12,7 +12,7 @@
      ansible.builtin.debug:
       msg: "Hi I ' am practicing {{Course}} for my {{Purpose}}."
 #It will exceute second
-  taks:
+  tasks:
    - name: print the information
      ansible.builtin.debug:
       msg: "Hi iam practing {{Course}} for my {{Purpose}}."
