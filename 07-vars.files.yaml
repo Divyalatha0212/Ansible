@@ -5,7 +5,7 @@
   tasks:
    - name: print the information
      vars_files:
-      -vars.yaml
+      - vars.yaml
      ansible.builtin.debug:
       msg: "Im practicing {{Course}} for my {{Purpose}}."
 
