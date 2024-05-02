@@ -2,3 +2,10 @@
 [web]
 172.31.31.198 #node private ip
 
+[localhosts]
+localhost
+
+[local:vars]
+
+File= "Inventory"
+Where= "Ansible"
