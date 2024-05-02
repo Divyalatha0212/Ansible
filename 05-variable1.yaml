@@ -7,3 +7,17 @@
   - name: Print the information
     ansible.builtin.debug:
      msg: " I am practcing {{Course}} for my {{Purpose}} "
+
+
+
+     # DEcalring thenvariable is PLAY
+
+     - name: Variable from PLAY
+       hosts: localhost
+       vars:
+        Course: "Devops"
+        Reason: "Interview"
+       tasks:
+        - name: print the information
+          ansible.builtin.debug:
+           msg: "Im preparing {{course}} for {{Reason}}"
