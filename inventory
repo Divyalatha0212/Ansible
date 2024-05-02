@@ -7,5 +7,5 @@ localhost
 
 [localhost:vars]
 
-File="Inventory"
+Learn="Inventory"
 Where="Ansible"

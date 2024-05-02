@@ -3,4 +3,4 @@
   tasks:
    - name: print the information
      ansible.builtin.debug:
-      msg: "Hi I am executing {{File}} variables in {{Where}}"
+      msg: "Hi I am executing {{Learn}} variables in {{Where}}"
