@@ -1,16 +1,30 @@
-- name: Install nginx
-  hosts: web
+# - name: Install nginx
+#   hosts: web
+#   tasks:
+#     - name: Installing the Niginx
+#       ansible.builtin.dnf:
+#         name: Nginx
+#         state: latest
+# - name: Start the nginx
+#   hosts: web
+#   tasks:
+#     - name: starting the Nginx
+#       ansible.buitlin.service:
+#         name: Nginx
+#         state: start
+#         enabled: yes
+# #installing Nginx using 2 tasks
+
+- name: variables from promting
+  hosts: localhost
+  vars_prompt:
+   - name: USERNAME
+     prompt: please enter the username
+     private: true
+   - name: PASSWORD
+     prompt: PASSWORD
+     private: true
   tasks:
-    - name: Installing the Niginx
-      ansible.builtin.dnf:
-        name: Nginx
-        state: latest
-- name: Start the nginx
-  hosts: web
-  tasks:
-    - name: starting the Nginx
-      ansible.buitlin.service:
-        name: Nginx
-        state: start
-        enabled: yes
-#installing Nginx using 2 tasks
+   - name: variables printing
+     ansible-builtin.debug:
+      msg: "HI user name:{{USERNAME}} password {{PASSWORD}}"
