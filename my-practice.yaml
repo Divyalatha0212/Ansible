@@ -22,9 +22,9 @@
      prompt: please enter the username
      private: true
    - name: PASSWORD
-     prompt: PASSWORD
+     prompt: please enter the password
      private: true
   tasks:
    - name: variables printing
      ansible.builtin.debug:
-      msg: "HI user name:{{USERNAME}} password {{PASSWORD}}"
+      msg: "HI user name:{{USERNAME}} password: {{PASSWORD}}"
