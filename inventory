@@ -1,6 +1,6 @@
 172.31.29.213 #ansible privae ip
 [web]
-172.31.31.198 #node private ip
+172.31.16.130 #node private ip
 
 [localhosts]
 localhost
