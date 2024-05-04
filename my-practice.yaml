@@ -26,5 +26,5 @@
      private: true
   tasks:
    - name: variables printing
-     ansible-builtin.debug:
+     ansible.builtin.debug:
       msg: "HI user name:{{USERNAME}} password {{PASSWORD}}"
