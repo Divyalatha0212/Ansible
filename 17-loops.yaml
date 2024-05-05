@@ -12,11 +12,11 @@
   hosts: Web
   become: yes
   tasks:
-  - name: install packages
-    ansible.builtin.dnf:
+   - name: installing packages
+     ansible.builtin.dnf:
       - name: "{{item}}"
         state: latest
-    loop: 
+     loop: 
       - mysql
       - nginx
       - postfix 
