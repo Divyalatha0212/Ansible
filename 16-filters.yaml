@@ -9,3 +9,6 @@
       greeting: "Hello, Good Bye" 
      ansible.builtin.debug:
       msg: "{{greeting | upper}}"  
+   - name: print lower case
+     ansible.built.debug:
+      msg: "{{greeting | lower}}"
