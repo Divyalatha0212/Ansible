@@ -1,16 +1,16 @@
-- name: loops
-  hosts: localhost
-  tasks:
-   - name: print names
-     ansible.builtin.debug:
-      msg: " Hello {{item}}"
-     loop:
-      - Linux
-      - Shell
-      - Ansible
- - name: install packages
-   hosts: Web
-   tasks:
+# - name: loops
+#   hosts: localhost
+#   tasks:
+#    - name: print names
+#      ansible.builtin.debug:
+#       msg: " Hello {{item}}"
+#      loop:
+#       - Linux
+#       - Shell
+#       - Ansible
+  - name: install packages
+    hosts: Web
+    tasks:
     - name: install packages
       ansible.builtin.dnf:
        - name: "{{item}}"
