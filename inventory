@@ -1,8 +1,5 @@
 [localhosts]
-localhost
+localhosts
 
-[localhost:vars]
 
-Learn="Inventory"
-Where="Ansible"
 WISHES="Moring from inv"
