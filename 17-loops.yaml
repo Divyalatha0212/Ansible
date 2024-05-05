@@ -8,3 +8,16 @@
       - Linux
       - Shell
       - Ansible
+ - name: install packages
+   hosts: Web
+   tasks:
+    - name: install packages
+      ansible.builtin.dnf:
+       - name: "{{item}}"
+         state: latest
+      loop: 
+       - mysql
+       - nginx
+       - postfix 
+
+
