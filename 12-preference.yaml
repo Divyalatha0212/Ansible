@@ -1,4 +1,4 @@
-- name: varaibale preferences
+- name: variable preferences
   hosts: localhost
   WISHES: "Morning from inventory"
   tasks:
