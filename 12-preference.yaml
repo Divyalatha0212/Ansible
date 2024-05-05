@@ -2,6 +2,10 @@
   hosts: localhost
   vars:
     WISHES: "Morning from PLAY variable"
+  tasks:
+   - name: variables preferences
+     ansible.builtin.debug:
+      msg: "Hello, Good {{WISHES}}"
   # vars_files:
   #  - vars.yaml
   # vars_prompt:
@@ -9,12 +13,12 @@
   #    prompt: Please enter the WISHES
   #    private: false
       
-  tasks:
-   - name: variables preferences
+  #tasks:
+   #- name: variables preferences
     #  vars:
     #   WISHES: "Moring from TASK variable"
-     ansible.builtin.debug:
-      msg: "Hello Good {{WISHES}}"
+    # ansible.builtin.debug:
+    #  msg: "Hello Good {{WISHES}}"
 
 
 
