@@ -2,18 +2,17 @@
   hosts: localhost
   vars:
    Course: DevOps and AWS
-  Tools:
-   - Linux
-   - Shell script
-   - Ansible
-  Experience:
-   - DevOps: 2
-   - AWS: 1
-   - Ansible: 6
-  Real Project: true
+   Tools:
+    - Linux
+    - Shell script
+    - Ansible
+   Experience:
+    - DevOps: 2
+    - AWS: 1
+    - Ansible: 6
+   Real Project: true
 
   tasks:
    - name: print variables
      ansible.builtin.debug:
       msg: "Course {{Course}},tools {{Tools}}, Experience, {{Experience}}, Real project {{Real Project}}" 
-       
