@@ -1,7 +1,7 @@
 - name: datatypes
   hosts: localhost
   vars:
-   Course: Practicing
+   Course: Devops with AWS
    Tools:
     - Linux
     - Shell script
