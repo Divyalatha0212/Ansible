@@ -17,3 +17,10 @@
       greeting: "Hello, Good Moon"
      ansible.builtin.debug:
       msg: "{{greeting |lower}}" 
+   - name: remove duplicates
+     vars:
+      number: {1,2,3,4,3,5,2,1}  
+     tasks:
+      - name: remove duplicates
+        ansible.builtin.debug:
+         msg: "{{number | unique}}" 
