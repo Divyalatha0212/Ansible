@@ -1,5 +1,6 @@
 - name: varaibale preferences
   hosts: localhost
+  WISHES: "Morning from inventory"
   tasks:
    - name: variables preferences
      ansible.builtin.debug:
