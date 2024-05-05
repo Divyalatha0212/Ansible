@@ -10,7 +10,7 @@
   #    private: false
       
   tasks:
-   - name: variable preferences
+   - name: variables preferences
     #  vars:
     #   WISHES: "Moring from TASK variable"
      ansible.builtin.debug:
