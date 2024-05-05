@@ -10,5 +10,5 @@
    greeting: "Hello, Good Bye"
   tasks:
    - name: Convert into Uppercase 
-     ansible.built.debug:
+     ansible.builtin.debug:
        msg: "Hello {{greeting | upper}}"
