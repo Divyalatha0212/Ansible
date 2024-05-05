@@ -10,6 +10,7 @@
 #       - Ansible
   - name: install packages
     hosts: Web
+    become: yes
     tasks:
     - name: install packages
       ansible.builtin.dnf:
