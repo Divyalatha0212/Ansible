@@ -21,7 +21,7 @@
   become: yes
   tasks:
    - name: check user exsist or not
-     ansible.builtin.debug: id expense
+     ansible.builtin.command: id expense
      register: USER
      ignore_errors: true
 
